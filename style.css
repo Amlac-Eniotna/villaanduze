@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(22, 22, 22);
+}
+
+.tableau, .tableau__header {
+    border-radius: 5px 5px 0 0;
+}
+
+.tableau {
+    width: 50%;
+    min-width: 300px;
+    background-color: rgb(240, 255, 247);
+    user-select: none;
+}
+
+.tableau__header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    height: 50px;
+    background: linear-gradient(to bottom, rgb(116, 116, 116), 0.5%, rgb(206, 206, 206), 70%, rgb(156, 156, 156));
+    border-top: 2px solid rgb(138, 138, 138);
+}
+
+.arrow__calendar {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    font-size: 50px;
+    transition: font-size 50ms;
+}
+
+.arrow__calendar:hover {
+    font-size: 53px;
+}
+
+.arrow__calendar:active {
+    font-size: 45px;
+}
+
+.tableau__header--info {
+    position: absolute;
+}
+
+.tableau__calendar {
+    width: 100%;
+}
+
+tr {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+td {
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 0.9em;
+}
+
+th {
+    border-bottom: 1px solid rgb(146, 146, 146);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+th, td {
+    border-right: 0.4px solid rgb(206, 206, 199);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.r {
+    height: 100%;
+    width: 100%;
+    color: rgb(105, 62, 62);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.reserved {
+    background-color: rgb(114, 233, 197);
+    border-right: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.reserved__first {
+    border-radius: 5px 0 0 5px;
+}
+
+.reserved__last {
+    border-radius: 0 5px 5px 0;
+}
