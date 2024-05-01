@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Villa 'nduzienne</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="./js/main.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <h1 class="header__nav--title">Villa 'nduzienne</h1>
+        <ul class="header__nav--menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="./pages/photo.html">Photo</a></li>
+          <li><a href="./pages/equipements.html">Équipements</a></li>
+          <li><a href="./pages/activites.html">Activités</a></li>
+          <li><a href="./pages/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="splash">
+        <h2 class="splash__title">
+          LOCATION DE GÎTE POUR VOS<br />VACANCES PRÈS D'ANDUZE
+        </h2>
+        <video
+          autoplay
+          loop
+          muted
+          plays-inline
+          class="splash__video"
+          alt="vidéo de la villa"
+        >
+          <source src="/public/presentation.webm" type="video/webm" />
+        </video>
+      </section>
+      <section class="presentation">
+        <h2 class="presentation__title">Villa 'nduzienne</h2>
+        <p class="presentation__text">
+          Profitez d'une vue imprenable sur les <em>Cévennes</em> depuis notre
+          villa neuve, idéalement située à proximité d'<strong>Anduze</strong>.
+          Cette villa tout confort pour 6 personnes, avec piscine privée, offre
+          une situation géographique privilégiée pour explorer la région.
+        </p>
+      </section>
+      <section class="agenda">
+        <h2 class="agenda__title">Calendrier des réservation</h2>
+        <iframe
+          title="agenda des réservation"
+          src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FParis&bgcolor=%23ffffff&showTitle=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0&src=ZGQwN2MwMWM0ZjUyNTVjNzg0MjkyMmFkMDJiN2U5ZDJmOWU5NWY5ODFjNGQ2NmY4OTVmYTMyZGQ5MWIxY2NiZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23795548"
+          class="agenda__google"
+          style="border-width: 0"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__text">© copyright</p>
+    </footer>
+  </body>
+</html>
