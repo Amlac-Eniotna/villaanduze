@@ -27,7 +27,8 @@ em {
   padding-bottom: 10px;
 }
 .header__nav {
-  max-width: 1440px;
+  padding: 0 100px;
+  max-width: 1240px;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -37,6 +38,7 @@ em {
 .header__nav--title {
   font-size: 72px;
   font-weight: 700;
+  cursor: pointer;
 }
 .header__nav--menu {
   display: flex;
@@ -45,6 +47,13 @@ em {
   font-weight: 700;
   gap: 25px;
   padding-bottom: 5px;
+}
+.header__nav--menu li {
+  text-decoration: underline rgba(255, 255, 255, 0);
+  transition: text-decoration-color 0.3s ease;
+}
+.header__nav--menu li:hover {
+  text-decoration-color: rgb(255, 255, 255);
 }
 
 .splash {
@@ -55,6 +64,8 @@ em {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  cursor: default;
+  user-select: none;
 }
 .splash__video {
   filter: brightness(0.7);
@@ -73,7 +84,8 @@ em {
 
 .presentation {
   margin: auto;
-  max-width: 1440px;
+  padding: 0 100px;
+  max-width: 1240px;
   font-family: montserrat, sans-serif;
   font-style: italic;
   margin-bottom: 50px;
@@ -90,7 +102,8 @@ em {
 }
 
 .agenda {
-  max-width: 1440px;
+  padding: 0 100px;
+  max-width: 1240px;
   margin: auto;
   height: 850px;
 }
@@ -104,6 +117,10 @@ em {
   font-size: 50px;
   font-weight: 450;
   height: 50px;
+}
+
+.header__nav--menu li:nth-child(1) {
+  text-decoration: underline;
 }
 
 .footer {

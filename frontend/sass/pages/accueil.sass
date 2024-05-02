@@ -7,6 +7,8 @@
     justify-content: center
     align-items: center
     margin-bottom: 20px
+    cursor: default
+    user-select: none
     &__video
         filter: brightness(0.7)
     &__title
@@ -20,23 +22,11 @@
         z-index: 1
         text-shadow: 0px 3px 15px #000000, 0px 3px 20px black
 
-.presentation
-    margin: auto
-    max-width: 1440px
-    font-family: montserrat, sans-serif
-    font-style: italic
-    margin-bottom: 50px
-    &__title
-        font-size: 72px
-        font-weight: 400
-        margin-bottom: 10px
-    &__text
-        font-weight: 200
-        font-size: 45px
-        line-height: 52px
+@import ../global/text
 
 .agenda
-    max-width: 1440px
+    padding: 0 100px
+    max-width: 1240px
     margin: auto
     height: 850px
     &__google
@@ -49,3 +39,7 @@
         font-weight: 450
         height: 50px
         
+.header
+    &__nav
+        &--menu li:nth-child(1)
+            text-decoration: underline
