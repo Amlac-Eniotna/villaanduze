@@ -1,0 +1,38 @@
+@import ../global/regle
+@import ../global/header
+@import ../global/footer
+
+.header
+    &__nav
+        &--menu li:nth-child(5)
+            text-decoration: underline
+
+.contact
+    padding: 0 100px
+    max-width: 1240px
+    margin: auto
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    gap: 20px
+    &__text
+        font-family: "Montserrat", sans-serif
+        font-weight: 300
+        font-size: 36px
+        max-width: calc( 1240px / 2 )
+        &--title
+            font-weight: 500
+            font-size: 64px
+        &--info
+            display: flex
+            flex-direction: column
+            gap: 36px
+    &__map
+        width: 45%
+
+body
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: space-between

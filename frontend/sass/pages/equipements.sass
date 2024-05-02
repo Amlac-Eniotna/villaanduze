@@ -1,0 +1,40 @@
+@import ../global/regle
+@import ../global/header
+@import ../global/footer
+
+@import ../global/text
+
+.header
+    margin-bottom: 40px
+    &__nav
+        &--menu li:nth-child(3)
+            text-decoration: underline
+
+.equipements
+    max-width: 1240px
+    padding: 0 100px
+    margin: auto
+    display: grid
+    gap: 80px 40px
+    grid-template-columns: repeat(2, 1fr)
+    margin-bottom: 80px
+    &__zone
+        padding: 10px
+        font-family: montserrat, sans-serif
+        &--title
+            font-size: 64px
+            font-weight: 500
+            border-bottom: 3px black solid
+            height: 70px
+            width: 350px
+            margin-bottom: 10px
+        &--list
+            font-size: 24px
+            font-weight: 400
+            display: flex
+            flex-direction: column
+            gap: 4px
+    & div
+        display: flex
+        flex-direction: column
+        gap: 33px
