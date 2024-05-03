@@ -114,12 +114,13 @@ em {
   font-family: "Montserrat", sans-serif;
 }
 .activites__activite--img {
-  width: 590px;
+  width: 605px;
   height: 300px;
   object-fit: cover;
   border-radius: 15px;
 }
 .activites__activite--text {
+  width: 605px;
   display: flex;
   flex-direction: column;
   gap: 15px;
