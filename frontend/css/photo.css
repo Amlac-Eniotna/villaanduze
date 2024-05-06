@@ -163,6 +163,15 @@ em {
     line-height: 35px;
   }
 }
+@media screen and (max-width: 425px) {
+  .presentation__title {
+    font-size: 40px;
+  }
+  .presentation__text {
+    font-size: 28px;
+    line-height: 30px;
+  }
+}
 .header {
   margin-bottom: 40px;
 }

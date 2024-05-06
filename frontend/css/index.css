@@ -177,6 +177,15 @@ em {
     line-height: 35px;
   }
 }
+@media screen and (max-width: 425px) {
+  .presentation__title {
+    font-size: 35px;
+  }
+  .presentation__text {
+    font-size: 28px;
+    line-height: 30px;
+  }
+}
 .agenda {
   padding: 0 100px;
   max-width: 1240px;
