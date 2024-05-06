@@ -39,8 +39,10 @@ em {
   font-size: 72px;
   font-weight: 700;
   cursor: pointer;
+  white-space: nowrap;
 }
 .header__nav--menu {
+  margin-left: 25px;
   display: flex;
   flex-direction: row;
   font-size: 38px;
@@ -56,9 +58,51 @@ em {
   text-decoration-color: rgb(255, 255, 255);
 }
 
+@media screen and (max-width: 1390px) and (min-width: 1024px) {
+  .header__nav {
+    padding: 0 50px;
+  }
+  .header__nav--title {
+    font-size: 55px;
+  }
+  .header__nav--menu {
+    font-size: 30px;
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 1023px) and (min-width: 769px) {
+  .header__nav {
+    padding: 0 50px;
+  }
+  .header__nav--title {
+    font-size: 42px;
+  }
+  .header__nav--menu {
+    margin-left: 20px;
+    font-size: 20px;
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__nav {
+    padding: 0 20px;
+  }
+  .header__nav--title {
+    font-size: 46px;
+  }
+  .header__nav--menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 360px) {
+  .header__nav--title {
+    font-size: 38px;
+  }
+}
 .splash {
   overflow: hidden;
-  height: 780px;
+  height: 75vh;
+  max-height: 1000px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -101,11 +145,42 @@ em {
   line-height: 52px;
 }
 
+@media screen and (max-width: 1390px) and (min-width: 1024px) {
+  .presentation {
+    padding: 0 50px;
+  }
+  .presentation__title {
+    font-size: 64px;
+  }
+}
+@media screen and (max-width: 1023px) and (min-width: 769px) {
+  .presentation {
+    padding: 0 50px;
+  }
+  .presentation__title {
+    font-size: 58px;
+  }
+  .presentation__text {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .presentation {
+    padding: 0 20px;
+  }
+  .presentation__title {
+    font-size: 48px;
+  }
+  .presentation__text {
+    font-size: 32px;
+    line-height: 35px;
+  }
+}
 .agenda {
   padding: 0 100px;
   max-width: 1240px;
   margin: auto;
-  height: 850px;
 }
 .agenda__google {
   width: 100%;
@@ -116,13 +191,41 @@ em {
   font-family: montserrat, sans-serif;
   font-size: 50px;
   font-weight: 450;
-  height: 50px;
 }
 
 .header__nav--menu li:nth-child(1) {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 1390px) {
+  .agenda {
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .splash__title {
+    font-size: 48px;
+  }
+  .agenda {
+    padding: 0 20px;
+  }
+  .agenda__google {
+    height: 400px;
+  }
+  .agenda__title {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 470px) {
+  br {
+    display: inline;
+    content: " ";
+    clear: none;
+  }
+  br::after {
+    content: " ";
+  }
+}
 .footer {
   background-color: #D3D3D3;
   height: 180px;
@@ -136,4 +239,4 @@ em {
   font-size: 30px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=index.css.map */

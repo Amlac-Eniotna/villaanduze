@@ -10,12 +10,12 @@
 
 .splash
     overflow: hidden
-    height: 566px
+    height: 70vh
     display: flex
     flex-direction: column
     justify-content: center
     align-items: center
-    margin-bottom: 70px
+    margin-bottom: 40px
     cursor: default
     user-select: none
     &__img
@@ -36,20 +36,20 @@
     padding: 0 100px
     margin: auto
     &__activite
-        margin-bottom: 40px
+        margin-bottom: 30px
         display: flex
         flex-direction: row
         justify-content: center
         align-items: center
-        gap: 30px
+        gap: 2.5%
         font-family: "Montserrat", sans-serif
         &--img
-            width: calc( 1240px / 2 - 15px )
-            height: 300px
+            width: calc( 50% - 15px )
+            height: 350px
             object-fit: cover
             border-radius: 15px
         &--text
-            width: calc( 1240px / 2 - 15px )
+            width: calc( 50% - 15px )
             display: flex
             flex-direction: column
             gap: 15px
@@ -63,5 +63,34 @@
             text-align: right
             flex-direction: row-reverse
         
-        
-            
+
+@media screen and (max-width: 1390px)
+    .activites
+        padding: 0 50px
+        &__activite
+            &--title
+                font-size: 48px
+            &--description
+                font-size: 24px
+
+@media screen and ( max-width: 768px )
+    .splash
+        &__title
+            font-size: 42px
+
+    .activites
+        padding: 0 20px
+        &__activite
+            flex-direction: column
+            &:nth-child(2n+2)
+                text-align: left
+                flex-direction: column
+            &--img
+                height: 280px
+                width: 100%
+            &--text
+                width: 100%
+            &--title
+                font-size: 35px
+            &--description
+                font-size: 20px

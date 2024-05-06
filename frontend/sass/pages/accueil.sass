@@ -1,7 +1,8 @@
 
 .splash
     overflow: hidden
-    height: 780px
+    height: 75vh
+    max-height: 1000px
     display: flex
     flex-direction: column
     justify-content: center
@@ -28,7 +29,6 @@
     padding: 0 100px
     max-width: 1240px
     margin: auto
-    height: 850px
     &__google
         width: 100%
         height: 800px
@@ -37,9 +37,32 @@
         font-family: montserrat, sans-serif
         font-size: 50px
         font-weight: 450
-        height: 50px
         
 .header
     &__nav
         &--menu li:nth-child(1)
             text-decoration: underline
+
+@media screen and (max-width: 1390px)
+    .agenda
+        padding: 0 50px
+
+@media screen and ( max-width: 768px )
+    .splash
+        &__title
+            font-size: 48px
+
+    .agenda
+        padding: 0 20px
+        &__google
+            height: 400px
+        &__title
+            font-size: 32px
+
+@media screen and ( max-width: 470px )
+    br
+        display: inline
+        content: ' '
+        clear: none
+    br::after
+        content: ' '

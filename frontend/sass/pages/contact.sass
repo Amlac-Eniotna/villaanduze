@@ -8,7 +8,7 @@
             text-decoration: underline
 
 .contact
-    padding: 0 100px
+    padding: 20px 100px
     max-width: 1240px
     margin: auto
     display: flex
@@ -36,3 +36,25 @@ body
     flex-direction: column
     justify-content: space-between
     align-items: space-between
+
+@media screen and ( max-width: 1390px )
+    .contact
+        padding: 20px 50px
+        &__text
+            font-size: 28px
+            &--title
+                font-size: 48px
+        &__map
+            width: 50%
+
+@media screen and ( max-width: 768px )
+    .contact
+        padding: 20px 20px
+        flex-direction: column
+        &__map
+            width: 100%
+            height: 350px
+        &__text
+            font-size: 20px
+            &--title
+                font-size: 32px
