@@ -21,10 +21,13 @@ em {
 }
 
 .header {
-  background-color: #231F20;
+  position: relative;
+  background: #fff6de;
   font-family: "Antonio", sans-serif;
-  color: white;
+  color: #9b1c58;
   padding-bottom: 10px;
+  box-shadow: 0px 0px 10px 0px black;
+  z-index: 5;
 }
 .header__nav {
   padding: 0 100px;
@@ -51,11 +54,11 @@ em {
   padding-bottom: 5px;
 }
 .header__nav--menu li {
-  text-decoration: underline rgba(255, 255, 255, 0);
+  text-decoration: underline rgba(155, 28, 88, 0);
   transition: text-decoration-color 0.3s ease;
 }
 .header__nav--menu li:hover {
-  text-decoration-color: rgb(255, 255, 255);
+  text-decoration-color: #9b1c58;
 }
 
 .menu-mobile {
@@ -80,7 +83,7 @@ em {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #ffffff;
+  background: #9b1c58;
   border-radius: 1px;
   z-index: 3;
   transform-origin: 5px 0px;
@@ -149,21 +152,21 @@ em {
     top: 69px;
     padding: 0;
     overflow: hidden;
-    border: 1px solid #1b1819;
+    border: 1px solid #ffeab5;
     transition: max-width 0.5s ease-in-out, border-color 0.5s step-start;
     width: auto;
     max-width: 100%;
   }
   .header__nav--menu li {
-    background-color: #231f20;
+    background-color: #fff6de;
     padding: 10px 20px 10px 20px;
-    border: 1px solid #1b1819;
+    border: 1px solid #ffeab5;
     display: flex;
     justify-content: end;
   }
   .menu-mobile-off {
     max-width: 0%;
-    border-color: rgba(27, 24, 25, 0);
+    border-color: rgba(108, 3, 69, 0);
     transition: border-color 0.5s step-end, max-width 0.5s ease-in-out;
   }
   .menu-mobile {
@@ -315,7 +318,7 @@ em {
   }
 }
 .footer {
-  background-color: #D3D3D3;
+  background-color: #ffd5cd;
   height: 180px;
   min-height: 180px;
   display: flex;
@@ -323,7 +326,7 @@ em {
   align-items: center;
 }
 .footer__text {
-  color: #231F20;
+  color: #311d3f;
   font-family: "Antonio", sans-serif;
   font-size: 30px;
 }

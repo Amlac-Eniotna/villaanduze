@@ -1,8 +1,11 @@
 .header
-    background-color: #231F20
+    position: relative
+    background: #fff6de
     font-family: "Antonio", sans-serif
-    color: white
+    color: #9b1c58
     padding-bottom: 10px
+    box-shadow: 0px 0px 10px 0px black
+    z-index: 5
     &__nav
         padding: 0 100px
         max-width: 1240px
@@ -25,10 +28,10 @@
             gap: 25px
             padding-bottom: 5px
             & li
-                text-decoration: underline rgba(255, 255, 255, 0)
+                text-decoration: underline #9b1c5800
                 transition: text-decoration-color 0.3s ease
             & li:hover
-                text-decoration-color: rgba(255, 255, 255, 1)
+                text-decoration-color: #9b1c58FF
 
 .menu-mobile
     display: none
@@ -51,7 +54,7 @@
         height: 4px
         margin-bottom: 5px
         position: relative
-        background: #ffffff
+        background: #9b1c58
         border-radius: 1px
         z-index: 3
         transform-origin: 5px 0px
@@ -109,19 +112,19 @@
                 top: 69px
                 padding: 0
                 overflow: hidden
-                border: 1px solid #1b1819
+                border: 1px solid #ffeab5
                 transition: max-width 0.5s ease-in-out, border-color 0.5s step-start
                 width: auto
                 max-width: 100%
                 & li
-                    background-color: #231f20
+                    background-color: #fff6de
                     padding: 10px 20px 10px 20px
-                    border: 1px solid #1b1819
+                    border: 1px solid #ffeab5
                     display: flex
                     justify-content: end
     .menu-mobile-off
         max-width: 0%
-        border-color: #1b181900
+        border-color: #6C034500
         transition: border-color 0.5s step-end, max-width 0.5s ease-in-out
     .menu-mobile
         display: flex
