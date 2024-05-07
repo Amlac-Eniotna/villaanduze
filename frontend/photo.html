@@ -13,31 +13,35 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/photo.css" />
-    <script type="module" src="./js/modal.js" defer></script>
+    <script src="./js/modal.js" defer></script>
+    <script src="./js/menu.js" defer></script>
   </head>
 
   <body>
     <header class="header">
       <nav class="header__nav">
         <h1 class="header__nav--title">
-          <a href="index.html">Villa 'nduzienne</a>
+          <a href="index">Villa 'nduzienne</a>
         </h1>
-        <ul class="header__nav--menu">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="photo.html">Photo</a></li>
-          <li><a href="equipements.html">Équipements</a></li>
-          <li><a href="activites.html">Activités</a></li>
-          <li><a href="contact.html">Contact</a></li>
+        <div class="menu-mobile">
+          <input type="checkbox" /><span></span><span></span><span></span>
+        </div>
+        <ul class="header__nav--menu menu-mobile-off">
+          <li><a href="index">Accueil</a></li>
+          <li><a href="photo">Photos</a></li>
+          <li><a href="equipements">Équipements</a></li>
+          <li><a href="activites">Activités</a></li>
+          <li><a href="contact">Contacts</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="presentation">
-        <h2 class="presentation__title">Lorem Ipsum</h2>
+        <h2 class="presentation__title">Découvrez Notre Gîte en Images</h2>
         <p class="presentation__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
-          risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
-          ultricies sed, dolor.
+          Explorez notre villa à travers une sélection de photos captivantes.
+          Laissez-vous inspirer par nos images et commencez à planifier votre
+          séjour parfait.
         </p>
       </section>
       <section class="gallery">

@@ -13,20 +13,24 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/activites.css" />
+    <script src="./js/menu.js" defer></script>
   </head>
 
   <body>
     <header class="header">
       <nav class="header__nav">
         <h1 class="header__nav--title">
-          <a href="index.html">Villa 'nduzienne</a>
+          <a href="index">Villa 'nduzienne</a>
         </h1>
-        <ul class="header__nav--menu">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="photo.html">Photo</a></li>
-          <li><a href="equipements.html">Équipements</a></li>
-          <li><a href="activites.html">Activités</a></li>
-          <li><a href="contact.html">Contact</a></li>
+        <div class="menu-mobile">
+          <input type="checkbox" /><span></span><span></span><span></span>
+        </div>
+        <ul class="header__nav--menu menu-mobile-off">
+          <li><a href="index">Accueil</a></li>
+          <li><a href="photo">Photos</a></li>
+          <li><a href="equipements">Équipements</a></li>
+          <li><a href="activites">Activités</a></li>
+          <li><a href="contact">Contacts</a></li>
         </ul>
       </nav>
     </header>
@@ -42,46 +46,121 @@
       <section class="activites">
         <article class="activites__activite">
           <img
-            src="public/activites.jpg"
-            alt="Panorama d'Anduze"
+            src="https://images.unsplash.com/photo-1438755582627-221038b62986?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="bambous de la bambouseraie à Anduze"
             class="activites__activite--img"
           />
           <div class="activites__activite--text">
-            <h3 class="activites__activite--title">Lorem ipsum</h3>
+            <h3 class="activites__activite--title">
+              Visite de la Bambouseraie
+            </h3>
             <p class="activites__activite--description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
-              risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing
-              nec, ultricies sed, dolor.
+              Ce jardin botanique d’exception dévoile plus de 1000 variétés de
+              bambous, arbres et plantes remarquables.<br /><br />site :
+              <a
+                href="https://bambouseraie.fr"
+                target="_blank"
+                style="color: #0000ee; text-decoration: underline 2px"
+                >https://bambouseraie.fr</a
+              >
             </p>
           </div>
         </article>
         <article class="activites__activite">
           <img
-            src="public/activites.jpg"
-            alt="Panorama d'Anduze"
+            src="https://images.unsplash.com/photo-1596458162315-4804c385b531?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Pont du Gard"
             class="activites__activite--img"
           />
           <div class="activites__activite--text">
-            <h3 class="activites__activite--title">Lorem ipsum</h3>
+            <h3 class="activites__activite--title">Pont du Gard</h3>
             <p class="activites__activite--description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
-              risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing
-              nec, ultricies sed, dolor.
+              Majestueux aqueduc romain, symbole de l'ingénierie antique, classé
+              au patrimoine mondial de l'UNESCO.<br /><br />site :
+              <a
+                href="https://pontdugard.fr/fr"
+                target="_blank"
+                style="color: #0000ee; text-decoration: underline 2px"
+                >https://pontdugard.fr</a
+              >
             </p>
           </div>
         </article>
         <article class="activites__activite">
           <img
-            src="public/activites.jpg"
-            alt="Panorama d'Anduze"
+            src="https://media-cdn.tripadvisor.com/media/photo-s/13/1d/f1/3b/pret-a-partir.jpg"
+            alt="Petit train d'Anduze"
             class="activites__activite--img"
           />
           <div class="activites__activite--text">
-            <h3 class="activites__activite--title">Lorem ipsum</h3>
+            <h3 class="activites__activite--title">
+              le Train à Vapeur des Cévennes
+            </h3>
             <p class="activites__activite--description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
-              risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing
-              nec, ultricies sed, dolor.
+              Découvrez la magie du passé à bord du Train à Vapeur des Cévennes,
+              une excursion unique à travers les splendides paysages cévenols.
+              <br /><br />site :
+              <a
+                href="https://www.trainavapeur.com"
+                target="_blank"
+                style="color: #0000ee; text-decoration: underline 2px"
+                >https://www.trainavapeur.com</a
+              >
+            </p>
+          </div>
+        </article>
+        <article class="activites__activite">
+          <img
+            src="https://static.apidae-tourisme.com/filestore/objets-touristiques/images/238/205/8310254.jpg"
+            alt="Lac souterrain de la grotte de Trabuc"
+            class="activites__activite--img"
+          />
+          <div class="activites__activite--text">
+            <h3 class="activites__activite--title">
+              Explorez la Grotte de Trabuc
+            </h3>
+            <p class="activites__activite--description">
+              un réseau souterrain fascinant de stalactites et de stalagmites
+              dans les Cévennes.
+              <br /><br />site :
+              <a
+                href="https://grotte-de-trabuc.com"
+                target="_blank"
+                style="color: #0000ee; text-decoration: underline 2px"
+                >https://grotte-de-trabuc.com</a
+              >
+            </p>
+          </div>
+        </article>
+        <article class="activites__activite">
+          <img
+            src="https://www.sortie-famille-gard.com/wp-content/uploads/2015/07/rando-cevennes-6-720x482.jpg"
+            alt="Anduze vue depuis peyremale"
+            class="activites__activite--img"
+          />
+          <div class="activites__activite--text">
+            <h3 class="activites__activite--title">
+              Parcourez les sentiers cévenols
+            </h3>
+            <p class="activites__activite--description">
+              Randonnez à travers les majestueuses Cévennes, entre forêts,
+              rivières et panoramas à couper le souffle.
+            </p>
+          </div>
+        </article>
+        <article class="activites__activite">
+          <img
+            src="https://images.unsplash.com/photo-1519092796169-bb9cc75a4b68?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Des bouteilles de vin sur un tonneau avec en arrière plan des vignes"
+            class="activites__activite--img"
+          />
+          <div class="activites__activite--text">
+            <h3 class="activites__activite--title">
+              Dégustation de vins locaux
+            </h3>
+            <p class="activites__activite--description">
+              Savourez les délices des vins des Cévennes : des cépages uniques
+              et des saveurs authentiques à découvrir.
             </p>
           </div>
         </article>

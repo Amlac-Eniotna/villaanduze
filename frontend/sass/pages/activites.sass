@@ -60,7 +60,6 @@
             font-size: 30px
             font-weight: 300
         &:nth-child(2n+2)
-            text-align: right
             flex-direction: row-reverse
         
 
@@ -72,6 +71,14 @@
                 font-size: 48px
             &--description
                 font-size: 24px
+
+@media screen and ( max-width: 1024px )
+    .activites
+        &__activite
+            &--title
+                font-size: 35px
+            &--description
+                font-size: 20px
 
 @media screen and ( max-width: 768px )
     .splash
@@ -88,9 +95,7 @@
             &--img
                 height: 280px
                 width: 100%
+                margin-bottom: 10px
             &--text
-                width: 100%
-            &--title
-                font-size: 35px
-            &--description
-                font-size: 20px
+                padding: 5px
+                width: calc(100% - 10px)
