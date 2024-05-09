@@ -20,6 +20,11 @@ em {
   font: inherit;
 }
 
+body {
+  background-color: #FFF9F0;
+  color: #141212;
+}
+
 .header {
   position: relative;
   background: #fff6de;
@@ -182,7 +187,7 @@ em {
   }
 }
 .footer {
-  background-color: #ffd5cd;
+  background-color: #FFD9C0;
   height: 180px;
   min-height: 180px;
   display: flex;
@@ -190,7 +195,7 @@ em {
   align-items: center;
 }
 .footer__text {
-  color: #311d3f;
+  color: #7c1444;
   font-family: "Antonio", sans-serif;
   font-size: 30px;
 }
