@@ -25,10 +25,6 @@ body {
   color: #141212;
 }
 
-iframe body {
-  background-color: red;
-}
-
 .header {
   position: relative;
   background: #fff6de;
