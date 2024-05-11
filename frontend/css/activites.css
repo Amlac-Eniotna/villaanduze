@@ -88,7 +88,7 @@ body {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #9b1c58;
+  background: white;
   border-radius: 1px;
   z-index: 3;
   transform-origin: 5px 0px;
@@ -157,22 +157,20 @@ body {
     top: 69px;
     padding: 0;
     overflow: hidden;
-    border: 1px solid #ffeab5;
-    transition: max-width 0.5s ease-in-out, border-color 0.5s step-start;
-    width: auto;
-    max-width: 100%;
+    transition: max-height 0.5s ease-in-out, border-color 0.5s step-start;
+    height: auto;
+    max-height: 100vh;
   }
   .header__nav--menu li {
-    background-color: #fff6de;
+    background-color: rgb(254, 197, 1);
     padding: 10px 20px 10px 20px;
-    border: 1px solid #ffeab5;
     display: flex;
     justify-content: end;
+    color: #804046;
   }
   .menu-mobile-off {
-    max-width: 0%;
-    border-color: rgba(108, 3, 69, 0);
-    transition: border-color 0.5s step-end, max-width 0.5s ease-in-out;
+    max-height: 0%;
+    transition: border-color 0.5s step-end, max-height 0.5s ease-in-out;
   }
   .menu-mobile {
     display: flex;
@@ -224,7 +222,7 @@ body {
   font-size: 72px;
   font-weight: bold;
   text-align: center;
-  color: white;
+  color: #FFF9F0;
   position: absolute;
   z-index: 1;
   text-shadow: 0px 3px 15px #000000, 0px 3px 20px black, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;

@@ -54,7 +54,7 @@
         height: 4px
         margin-bottom: 5px
         position: relative
-        background: #9b1c58
+        background: white
         border-radius: 1px
         z-index: 3
         transform-origin: 5px 0px
@@ -112,20 +112,18 @@
                 top: 69px
                 padding: 0
                 overflow: hidden
-                border: 1px solid #ffeab5
-                transition: max-width 0.5s ease-in-out, border-color 0.5s step-start
-                width: auto
-                max-width: 100%
+                transition: max-height 0.5s ease-in-out, border-color 0.5s step-start
+                height: auto
+                max-height: 100vh
                 & li
-                    background-color: #fff6de
+                    background-color: rgba(254,197,1,1)
                     padding: 10px 20px 10px 20px
-                    border: 1px solid #ffeab5
                     display: flex
                     justify-content: end
+                    color: #804046
     .menu-mobile-off
-        max-width: 0%
-        border-color: #6C034500
-        transition: border-color 0.5s step-end, max-width 0.5s ease-in-out
+        max-height: 0%
+        transition: border-color 0.5s step-end, max-height 0.5s ease-in-out
     .menu-mobile
         display: flex
 
