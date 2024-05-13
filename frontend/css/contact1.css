@@ -88,7 +88,7 @@ body {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: white;
+  background: #9b1c58;
   border-radius: 1px;
   z-index: 3;
   transform-origin: 5px 0px;
@@ -162,11 +162,11 @@ body {
     max-height: 100vh;
   }
   .header__nav--menu li {
-    background-color: rgb(254, 197, 1);
+    background-color: #fff6de;
     padding: 10px 20px 10px 20px;
     display: flex;
     justify-content: end;
-    color: #804046;
+    color: #9b1c58;
   }
   .menu-mobile-off {
     max-height: 0%;
@@ -184,144 +184,8 @@ body {
     top: 59px;
   }
 }
-.splash {
-  overflow: hidden;
-  height: 75vh;
-  max-height: 1000px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-  cursor: default;
-  user-select: none;
-}
-.splash__video {
-  filter: brightness(0.7);
-}
-.splash__title {
-  font-family: "Antonio", sans-serif;
-  font-size: 72px;
-  font-weight: bold;
-  text-align: center;
-  color: #FFF9F0;
-  position: absolute;
-  -webkit-text-stroke: 2px black;
-  z-index: 1;
-  text-shadow: 0px 3px 15px #000000, 0px 3px 20px black;
-}
-
-.presentation {
-  margin: auto;
-  padding: 0 100px;
-  max-width: 1240px;
-  font-family: montserrat, sans-serif;
-  font-style: italic;
-  margin-bottom: 50px;
-}
-.presentation__title {
-  font-size: 72px;
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-.presentation__text {
-  font-weight: 200;
-  font-size: 45px;
-  line-height: 52px;
-}
-
-@media screen and (max-width: 1390px) and (min-width: 1024px) {
-  .presentation {
-    padding: 0 50px;
-  }
-  .presentation__title {
-    font-size: 64px;
-  }
-}
-@media screen and (max-width: 1023px) and (min-width: 769px) {
-  .presentation {
-    padding: 0 50px;
-  }
-  .presentation__title {
-    font-size: 58px;
-  }
-  .presentation__text {
-    font-size: 40px;
-    line-height: 45px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .presentation {
-    padding: 0 20px;
-  }
-  .presentation__title {
-    font-size: 48px;
-  }
-  .presentation__text {
-    font-size: 32px;
-    line-height: 35px;
-  }
-}
-@media screen and (max-width: 425px) {
-  .presentation__title {
-    font-size: 35px;
-  }
-  .presentation__text {
-    font-size: 28px;
-    line-height: 30px;
-  }
-}
-.agenda {
-  padding: 0 100px;
-  max-width: 1240px;
-  margin: auto;
-}
-.agenda__google {
-  width: 100%;
-  height: 800px;
-}
-.agenda__title {
-  text-align: center;
-  font-family: montserrat, sans-serif;
-  font-size: 50px;
-  font-weight: 450;
-}
-
-.header__nav--menu li:nth-child(1) {
-  text-decoration: underline;
-}
-
-@media screen and (max-width: 1390px) {
-  .agenda {
-    padding: 0 50px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .splash__title {
-    font-size: 48px;
-  }
-  .agenda {
-    padding: 0 20px;
-  }
-  .agenda__google {
-    height: 400px;
-  }
-  .agenda__title {
-    font-size: 32px;
-  }
-}
-@media screen and (max-width: 470px) {
-  br {
-    display: inline;
-    content: " ";
-    clear: none;
-  }
-  br::after {
-    content: " ";
-  }
-}
 .footer {
-  background-color: #FFD9C0;
+  background: #FFD9C0;
   height: 180px;
   min-height: 180px;
   display: flex;
@@ -334,4 +198,74 @@ body {
   font-size: 30px;
 }
 
-/*# sourceMappingURL=index.css.map */
+.header__nav--menu li:nth-child(5) {
+  text-decoration: underline;
+}
+
+.contact {
+  padding: 20px 100px;
+  max-width: 1240px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+.contact__text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  max-width: 620px;
+}
+.contact__text--title {
+  font-weight: 500;
+  font-size: 64px;
+}
+.contact__text--info {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.contact__map {
+  width: 45%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1390px) {
+  .contact {
+    padding: 20px 50px;
+  }
+  .contact__text {
+    font-size: 28px;
+  }
+  .contact__text--title {
+    font-size: 48px;
+  }
+  .contact__map {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact {
+    padding: 20px 20px;
+    flex-direction: column;
+  }
+  .contact__map {
+    width: 100%;
+    height: 350px;
+  }
+  .contact__text {
+    font-size: 20px;
+  }
+  .contact__text--title {
+    font-size: 32px;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

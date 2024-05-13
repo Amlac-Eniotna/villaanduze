@@ -88,7 +88,7 @@ body {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: white;
+  background: #9b1c58;
   border-radius: 1px;
   z-index: 3;
   transform-origin: 5px 0px;
@@ -162,11 +162,11 @@ body {
     max-height: 100vh;
   }
   .header__nav--menu li {
-    background-color: rgb(254, 197, 1);
+    background-color: #fff6de;
     padding: 10px 20px 10px 20px;
     display: flex;
     justify-content: end;
-    color: #804046;
+    color: #9b1c58;
   }
   .menu-mobile-off {
     max-height: 0%;
@@ -185,7 +185,7 @@ body {
   }
 }
 .footer {
-  background-color: #FFD9C0;
+  background: #FFD9C0;
   height: 180px;
   min-height: 180px;
   display: flex;
