@@ -25,6 +25,18 @@ body {
   color: #141212;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 .header {
   position: relative;
   font-family: "Antonio", sans-serif;
@@ -198,183 +210,74 @@ body {
   font-size: 30px;
 }
 
-.presentation {
-  margin: auto;
-  padding: 0 100px;
-  max-width: 1240px;
-  font-family: montserrat, sans-serif;
-  font-style: italic;
-  margin-bottom: 50px;
-}
-.presentation__title {
-  font-size: 72px;
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-.presentation__text {
-  font-weight: 200;
-  font-size: 45px;
-  line-height: 52px;
-}
-
-@media screen and (max-width: 1390px) and (min-width: 1024px) {
-  .presentation {
-    padding: 0 50px;
-  }
-  .presentation__title {
-    font-size: 64px;
-  }
-}
-@media screen and (max-width: 1023px) and (min-width: 769px) {
-  .presentation {
-    padding: 0 50px;
-  }
-  .presentation__title {
-    font-size: 58px;
-  }
-  .presentation__text {
-    font-size: 40px;
-    line-height: 45px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .presentation {
-    padding: 0 20px;
-  }
-  .presentation__title {
-    font-size: 48px;
-  }
-  .presentation__text {
-    font-size: 32px;
-    line-height: 35px;
-  }
-}
-@media screen and (max-width: 425px) {
-  .presentation__title {
-    font-size: 35px;
-  }
-  .presentation__text {
-    font-size: 28px;
-    line-height: 30px;
-  }
-}
-.header {
-  margin-bottom: 40px;
-}
-.header__nav--menu li:nth-child(2) {
+.header__nav--menu li:nth-child(5) {
   text-decoration: underline;
 }
 
-.gallery {
+.contact {
+  padding: 20px 100px;
   max-width: 1240px;
-  padding: 0 100px;
   margin: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   gap: 20px;
-  margin-bottom: 30px;
 }
-.gallery__frame {
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: relative;
-  overflow: hidden;
-  height: 398.3333333333px;
-  width: 100%;
-  border-radius: 15px;
-  transition: box-shadow 0.2s, transform 0.2s;
+.contact__text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  max-width: 620px;
 }
-.gallery__frame img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
-.gallery__frame:hover {
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
-  transform: scale(1.05);
-}
-
-.modal {
-  z-index: 10;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  font-family: "Montserrat";
+.contact__text--title {
   font-weight: 500;
-  font-size: 25px;
-  cursor: pointer;
+  font-size: 64px;
 }
-.modal__frame {
-  padding: 15px;
-  background-color: white;
-  border-radius: 15px;
-  position: relative;
+.contact__text--info {
   display: flex;
-  justify-content: end;
-  cursor: default;
+  flex-direction: column;
+  gap: 36px;
 }
-.modal__frame--close {
-  margin: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  height: 30px;
-  width: 30px;
-  background-color: rgba(255, 255, 255, 0.6);
-  position: absolute;
-  cursor: pointer;
-  user-select: none;
-}
-.modal__frame--picture {
-  max-width: 90vw;
-  max-height: 90vh;
-  user-select: none;
+.contact__map {
+  width: 45%;
 }
 
-@media screen and (max-width: 1390px) and (min-width: 1024px) {
-  .gallery {
-    padding: 0 50px;
-  }
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-@media screen and (max-width: 1023px) and (min-width: 769px) {
-  .gallery {
-    padding: 0 50px;
+
+@media screen and (max-width: 1390px) {
+  .contact {
+    padding: 20px 50px;
   }
-  .gallery__frame {
-    height: 250px;
+  .contact__text {
+    font-size: 28px;
   }
-  .modal__frame {
-    top: 3%;
+  .contact__text--title {
+    font-size: 48px;
   }
-  .modal__frame--picture {
-    max-width: 80vw;
-    max-height: 80vh;
+  .contact__map {
+    width: 50%;
   }
 }
 @media screen and (max-width: 768px) {
-  .gallery {
-    padding: 0 20px;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  .contact {
+    padding: 20px 20px;
+    flex-direction: column;
   }
-  .gallery__frame {
-    height: 250px;
+  .contact__map {
+    width: 100%;
+    height: 350px;
   }
-  .modal__frame {
-    top: 3%;
+  .contact__text {
+    font-size: 20px;
   }
-  .modal__frame--picture {
-    max-width: 80vw;
-    max-height: 80vh;
+  .contact__text--title {
+    font-size: 32px;
   }
 }
 
-/*# sourceMappingURL=photo1.css.map */
+/*# sourceMappingURL=contact3.css.map */
