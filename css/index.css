@@ -218,7 +218,7 @@ body {
 }
 .splash {
   overflow: hidden;
-  height: 75vh;
+  height: 85vh;
   max-height: 1000px;
   display: flex;
   flex-direction: column;
@@ -366,4 +366,4 @@ body {
   font-size: 30px;
 }
 
-/*# sourceMappingURL=index3.css.map */
+/*# sourceMappingURL=index.css.map */
