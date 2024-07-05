@@ -228,8 +228,10 @@ body {
   cursor: default;
   user-select: none;
 }
-.splash__video {
-  filter: brightness(0.7);
+.splash__image {
+  filter: brightness(0.8);
+  width: 100%;
+  pointer-events: none;
 }
 .splash__title {
   font-family: "Antonio", sans-serif;

@@ -246,7 +246,7 @@ body {
   user-select: none;
 }
 .splash__img {
-  filter: brightness(0.6);
+  filter: brightness(0.8);
   pointer-events: none;
 }
 .splash__title {
@@ -342,4 +342,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=activites3.css.map */
+/*# sourceMappingURL=activites.css.map */
