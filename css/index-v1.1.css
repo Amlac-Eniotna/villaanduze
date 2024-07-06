@@ -231,6 +231,8 @@ body {
 .splash__image {
   filter: brightness(0.8);
   width: 100%;
+  object-fit: cover;
+  height: 100%;
   pointer-events: none;
 }
 .splash__title {
@@ -368,4 +370,4 @@ body {
   font-size: 30px;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=index-v1.css.map */
