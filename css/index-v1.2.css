@@ -266,9 +266,14 @@ body {
   line-height: 52px;
 }
 
+.margintop {
+  margin-top: 45px;
+}
+
 @media screen and (max-width: 1390px) and (min-width: 1024px) {
   .presentation {
     padding: 0 50px;
+    margin-bottom: 64px;
   }
   .presentation__title {
     font-size: 64px;
@@ -277,6 +282,7 @@ body {
 @media screen and (max-width: 1023px) and (min-width: 769px) {
   .presentation {
     padding: 0 50px;
+    margin-bottom: 40px;
   }
   .presentation__title {
     font-size: 58px;
@@ -285,10 +291,14 @@ body {
     font-size: 40px;
     line-height: 45px;
   }
+  .margintop {
+    margin-top: 40px;
+  }
 }
 @media screen and (max-width: 768px) {
   .presentation {
     padding: 0 20px;
+    margin-bottom: 32px;
   }
   .presentation__title {
     font-size: 48px;
@@ -297,14 +307,23 @@ body {
     font-size: 32px;
     line-height: 35px;
   }
+  .margintop {
+    margin-top: 32px;
+  }
 }
 @media screen and (max-width: 425px) {
+  .presentation {
+    margin-bottom: 28px;
+  }
   .presentation__title {
     font-size: 35px;
   }
   .presentation__text {
     font-size: 28px;
     line-height: 30px;
+  }
+  .margintop {
+    margin-top: 28px;
   }
 }
 .agenda {
@@ -370,4 +389,4 @@ body {
   font-size: 30px;
 }
 
-/*# sourceMappingURL=index-v1.1.css.map */
+/*# sourceMappingURL=index-v1.2.css.map */
