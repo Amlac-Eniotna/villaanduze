@@ -83,6 +83,7 @@ body {
   position: absolute;
   inset: 0%;
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   -webkit-mask: linear-gradient(0deg, transparent, black 5%);
   width: 100%;
   z-index: -1;
@@ -196,6 +197,7 @@ body {
     position: absolute;
     inset: 0%;
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     -webkit-mask: linear-gradient(180deg, transparent, black 5px);
     width: 100%;
     z-index: -1;
@@ -345,4 +347,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=activites-v1.1.css.map */
+/*# sourceMappingURL=activites-v1.2.css.map */
