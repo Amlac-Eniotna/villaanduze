@@ -320,6 +320,11 @@ body {
   height: 100%;
   width: 100%;
 }
+.gallery__frame video {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
 .gallery__frame:hover {
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
   transform: scale(1.05);

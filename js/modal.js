@@ -52,7 +52,7 @@ function modaleVideo(e) {
   close.className = 'modal__frame--close'
   let video = document.createElement('video')
   video.controls = true
-  video.className = 'modal__frame--video'
+  video.className = 'modal__frame--picture'
   const sources = e.target.querySelectorAll('source')
   console.log(sources)
   const sourcesClone = []
