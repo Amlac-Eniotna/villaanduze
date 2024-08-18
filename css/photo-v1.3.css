@@ -334,8 +334,8 @@ body {
   border-radius: 9999px;
   padding: 15px;
   opacity: 0.8;
-  height: 33%;
-  width: 33%;
+  height: 130px;
+  width: 130px;
 }
 .gallery__frame:hover {
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
@@ -426,4 +426,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=photo-v1.2.css.map */
+/*# sourceMappingURL=photo-v1.3.css.map */
