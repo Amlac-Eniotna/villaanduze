@@ -27,7 +27,10 @@
         width: 100%
         border-radius: 15px
         transition: box-shadow 0.2s, transform 0.2s
-        & img
+        display: flex
+        justify-content: center
+        align-items: center
+        & .gallery__frame--picture
             object-fit: cover
             height: 100%
             width: 100%
@@ -35,6 +38,14 @@
             object-fit: cover
             height: 100%
             width: 100%
+        &--play
+            position: absolute
+            background: #bbbbbb
+            border-radius: 9999px
+            padding: 15px
+            opacity: 0.8
+            height: 33%
+            width: 33%
     &__frame:hover
         box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5)
         transform: scale(1.05)

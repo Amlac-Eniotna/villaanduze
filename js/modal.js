@@ -1,11 +1,17 @@
 function main() {
   const photos = document.querySelectorAll('.gallery__frame--picture')
   const videos = document.querySelectorAll('.gallery__frame--video')
+  const play = document.querySelectorAll('.gallery__frame--play')
   photos.forEach((photo) => {
     photo.addEventListener('click', (e) => modalePhoto(e))
   })
   videos.forEach((video) => {
     video.addEventListener('click', (e) => modaleVideo(e))
+  })
+  play.forEach((play) => {
+    play.addEventListener('click', (e) => {
+      e.target.parentElement.querySelector('.gallery__frame--video').click()
+    })
   })
 }
 
@@ -54,11 +60,9 @@ function modaleVideo(e) {
   video.controls = true
   video.className = 'modal__frame--picture'
   const sources = e.target.querySelectorAll('source')
-  console.log(sources)
   const sourcesClone = []
   sourcesClone[0] = sources[0].cloneNode(true)
   sourcesClone[1] = sources[1].cloneNode(true)
-  console.log(sourcesClone)
 
   frame.appendChild(close)
   frame.appendChild(video)
