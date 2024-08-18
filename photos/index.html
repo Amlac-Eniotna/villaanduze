@@ -17,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/photo-v1.css" />
+    <link rel="stylesheet" href="../css/photo-v1.1.css" />
     <script src="../js/modal.js" defer></script>
     <script src="../js/menu.js" defer></script>
   </head>
@@ -52,6 +52,12 @@
         </p>
       </section>
       <section class="gallery">
+        <div class="gallery__frame">
+          <video class="gallery__frame--video" preload="metadata">
+            <source src="../public/photo/VID_0001.webm" type="video/webm" />
+            <source src="../public/photo/VID_0001.MP4" type="video/mp4" />
+          </video>
+        </div>
         <div class="gallery__frame">
           <img
             srcset="../public/photo/IMG_9845_400px.webp"
