@@ -21,7 +21,7 @@ em {
 }
 
 body {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   color: #141212;
 }
 
@@ -39,7 +39,7 @@ body {
 
 .header {
   position: relative;
-  font-family: "Antonio", sans-serif;
+  font-family: 'Antonio', sans-serif;
   color: #9b1c58;
   padding-bottom: 10px;
   border-bottom: 1px solid #f4f3f2;
@@ -103,7 +103,10 @@ body {
   border-radius: 1px;
   z-index: 3;
   transform-origin: 5px 0px;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition:
+    transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    opacity 0.55s ease;
 }
 .menu-mobile span:first-child {
   transform-origin: 50% 0%;
@@ -168,13 +171,15 @@ body {
     top: 69px;
     padding: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease-in-out, border-color 0.5s step-start;
+    transition:
+      max-height 0.5s ease-in-out,
+      border-color 0.5s step-start;
     height: auto;
     max-height: 100vh;
   }
   .header__nav--menu li {
     border: 1px solid #f4f3f2;
-    background-color: #FAFAFA;
+    background-color: #fafafa;
     padding: 10px 20px 10px 20px;
     display: flex;
     justify-content: end;
@@ -182,7 +187,9 @@ body {
   }
   .menu-mobile-off {
     max-height: 0%;
-    transition: border-color 0.5s step-end, max-height 0.5s ease-in-out;
+    transition:
+      border-color 0.5s step-end,
+      max-height 0.5s ease-in-out;
   }
   .menu-mobile {
     display: flex;
@@ -197,7 +204,11 @@ body {
   }
 }
 .footer {
-  background: linear-gradient(0deg, rgb(244, 243, 242) 99%, rgba(244, 243, 242, 0) 100%);
+  background: linear-gradient(
+    0deg,
+    rgb(244, 243, 242) 99%,
+    rgba(244, 243, 242, 0) 100%
+  );
 }
 .footer__nav {
   margin: auto;
@@ -217,14 +228,17 @@ body {
 }
 .footer__text {
   color: #7c1444;
-  font-family: "Antonio", sans-serif;
+  font-family: 'Antonio', sans-serif;
   font-size: 24px;
-  margin-bottom: 8px;
+  margin-bottom: 0px;
+}
+.footer__text:hover {
+  text-decoration: underline;
 }
 .footer__link {
   color: black;
   font-size: 16px;
-  font-family: "Antonio", sans-serif;
+  font-family: 'Antonio', sans-serif;
   text-decoration: underline;
 }
 .footer__img {
@@ -250,74 +264,149 @@ body {
     gap: 15px;
   }
 }
-.header__nav--menu li:nth-child(5) {
-  text-decoration: underline;
-}
-
-.contact {
-  padding: 20px 100px;
-  max-width: 1240px;
+.presentation {
   margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 20px;
+  padding: 0 100px;
+  max-width: 1240px;
+  font-family: montserrat, sans-serif;
+  font-style: italic;
+  margin-bottom: 50px;
 }
-.contact__text {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  font-size: 36px;
-  max-width: 620px;
+.presentation__title {
+  font-size: 72px;
+  font-weight: 400;
+  margin-bottom: 10px;
 }
-.contact__text--title {
-  font-weight: 500;
-  font-size: 64px;
-}
-.contact__text--info {
-  display: flex;
-  flex-direction: column;
-  gap: 36px;
-}
-.contact__map {
-  width: 45%;
+.presentation__text {
+  font-weight: 200;
+  font-size: 45px;
+  line-height: 52px;
 }
 
-body {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.margintop {
+  margin-top: 45px;
 }
 
-@media screen and (max-width: 1390px) {
-  .contact {
-    padding: 20px 50px;
+@media screen and (max-width: 1390px) and (min-width: 1024px) {
+  .presentation {
+    padding: 0 50px;
+    margin-bottom: 64px;
   }
-  .contact__text {
-    font-size: 28px;
+  .presentation__title {
+    font-size: 64px;
   }
-  .contact__text--title {
-    font-size: 48px;
+}
+@media screen and (max-width: 1023px) and (min-width: 769px) {
+  .presentation {
+    padding: 0 50px;
+    margin-bottom: 40px;
   }
-  .contact__map {
-    width: 50%;
+  .presentation__title {
+    font-size: 58px;
+  }
+  .presentation__text {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .margintop {
+    margin-top: 40px;
   }
 }
 @media screen and (max-width: 768px) {
-  .contact {
-    padding: 20px 20px;
-    flex-direction: column;
+  .presentation {
+    padding: 0 20px;
+    margin-bottom: 32px;
   }
-  .contact__map {
-    width: 100%;
-    height: 350px;
+  .presentation__title {
+    font-size: 48px;
   }
-  .contact__text {
-    font-size: 20px;
-  }
-  .contact__text--title {
+  .presentation__text {
     font-size: 32px;
+    line-height: 35px;
+  }
+  .margintop {
+    margin-top: 32px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .presentation {
+    margin-bottom: 28px;
+  }
+  .presentation__title {
+    font-size: 35px;
+  }
+  .presentation__text {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .margintop {
+    margin-top: 28px;
+  }
+}
+.header {
+  margin-bottom: 40px;
+}
+.header__nav--menu li:nth-child(3) {
+  text-decoration: underline;
+}
+
+.equipements {
+  max-width: 1240px;
+  padding: 0 100px;
+  margin: auto;
+  display: grid;
+  gap: 80px 40px;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  margin-bottom: 80px;
+}
+.equipements__zone {
+  padding: 10px;
+  font-family: montserrat, sans-serif;
+}
+.equipements__zone--title {
+  font-size: 64px;
+  font-weight: 500;
+  border-bottom: 3px black solid;
+  height: 70px;
+  width: 350px;
+  margin-bottom: 10px;
+}
+.equipements__zone--list {
+  font-size: 24px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.equipements div {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+}
+
+@media screen and (max-width: 1390px) {
+  .equipements {
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .equipements {
+    padding: 0 20px;
+    grid-template-columns: 1fr;
+    gap: 33px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+  .equipements__zone {
+    padding: 5px;
+  }
+  .equipements__zone--title {
+    font-size: 48px;
+    height: 50px;
+    width: 230px;
+  }
+  .equipements__zone--list {
+    font-size: 16px;
   }
 }
 
-/*# sourceMappingURL=contact-v1.4.css.map */
+/*# sourceMappingURL=equipements-v1.4.css.map */
