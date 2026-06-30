@@ -40,15 +40,16 @@
             width: 100%
         &--play
             position: absolute
-            background: #bbbbbb
-            border-radius: 9999px
-            padding: 15px
-            opacity: 0.8
-            height: 130px
-            width: 130px
+            width: 66px
+            height: 72px
+            filter: drop-shadow(0 0 5px rgba(20, 18, 18, 0.45)) drop-shadow(0 7px 16px rgba(20, 18, 18, 0.5))
+            transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), filter 0.3s cubic-bezier(0.22, 1, 0.36, 1)
     &__frame:hover
         box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5)
         transform: scale(1.05)
+        & .gallery__frame--play
+            transform: scale(1.1)
+            filter: drop-shadow(0 0 6px rgba(20, 18, 18, 0.5)) drop-shadow(0 9px 20px rgba(20, 18, 18, 0.55))
 
 .modal
     z-index: 10

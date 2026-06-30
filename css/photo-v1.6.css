@@ -21,7 +21,7 @@ em {
 }
 
 body {
-  background-color: #fafafa;
+  background-color: #FAFAFA;
   color: #141212;
 }
 
@@ -39,7 +39,7 @@ body {
 
 .header {
   position: relative;
-  font-family: 'Antonio', sans-serif;
+  font-family: "Antonio", sans-serif;
   color: #9b1c58;
   padding-bottom: 10px;
   border-bottom: 1px solid #f4f3f2;
@@ -61,7 +61,6 @@ body {
   white-space: nowrap;
 }
 .header__nav--menu {
-  z-index: 20;
   margin-left: 25px;
   display: flex;
   flex-direction: row;
@@ -104,10 +103,7 @@ body {
   border-radius: 1px;
   z-index: 3;
   transform-origin: 5px 0px;
-  transition:
-    transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 .menu-mobile span:first-child {
   transform-origin: 50% 0%;
@@ -172,15 +168,13 @@ body {
     top: 69px;
     padding: 0;
     overflow: hidden;
-    transition:
-      max-height 0.5s ease-in-out,
-      border-color 0.5s step-start;
+    transition: max-height 0.5s ease-in-out, border-color 0.5s step-start;
     height: auto;
     max-height: 100vh;
   }
   .header__nav--menu li {
     border: 1px solid #f4f3f2;
-    background-color: #fafafa;
+    background-color: #FAFAFA;
     padding: 10px 20px 10px 20px;
     display: flex;
     justify-content: end;
@@ -188,9 +182,7 @@ body {
   }
   .menu-mobile-off {
     max-height: 0%;
-    transition:
-      border-color 0.5s step-end,
-      max-height 0.5s ease-in-out;
+    transition: border-color 0.5s step-end, max-height 0.5s ease-in-out;
   }
   .menu-mobile {
     display: flex;
@@ -205,11 +197,7 @@ body {
   }
 }
 .footer {
-  background: linear-gradient(
-    0deg,
-    rgb(244, 243, 242) 99%,
-    rgba(244, 243, 242, 0) 100%
-  );
+  background: linear-gradient(0deg, rgb(244, 243, 242) 99%, rgba(244, 243, 242, 0) 100%);
 }
 .footer__nav {
   margin: auto;
@@ -229,17 +217,14 @@ body {
 }
 .footer__text {
   color: #7c1444;
-  font-family: 'Antonio', sans-serif;
+  font-family: "Antonio", sans-serif;
   font-size: 24px;
-  margin-bottom: 0px;
-}
-.footer__text:hover {
-  text-decoration: underline;
+  margin-bottom: 8px;
 }
 .footer__link {
   color: black;
   font-size: 16px;
-  font-family: 'Antonio', sans-serif;
+  font-family: "Antonio", sans-serif;
   text-decoration: underline;
 }
 .footer__img {
@@ -368,9 +353,7 @@ body {
   height: 398.3333333333px;
   width: 100%;
   border-radius: 15px;
-  transition:
-    box-shadow 0.2s,
-    transform 0.2s;
+  transition: box-shadow 0.2s, transform 0.2s;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -387,16 +370,18 @@ body {
 }
 .gallery__frame--play {
   position: absolute;
-  background: #bbbbbb;
-  border-radius: 9999px;
-  padding: 15px;
-  opacity: 0.8;
-  height: 130px;
-  width: 130px;
+  width: 66px;
+  height: 72px;
+  filter: drop-shadow(0 0 5px rgba(20, 18, 18, 0.45)) drop-shadow(0 7px 16px rgba(20, 18, 18, 0.5));
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), filter 0.3s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .gallery__frame:hover {
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
   transform: scale(1.05);
+}
+.gallery__frame:hover .gallery__frame--play {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 6px rgba(20, 18, 18, 0.5)) drop-shadow(0 9px 20px rgba(20, 18, 18, 0.55));
 }
 
 .modal {
@@ -412,7 +397,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 500;
   font-size: 25px;
   cursor: pointer;
@@ -482,5 +467,3 @@ body {
     max-height: 80vh;
   }
 }
-
-/*# sourceMappingURL=photo-v1.4.css.map */
