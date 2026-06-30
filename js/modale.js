@@ -24,7 +24,7 @@ function modalePhoto(e) {
   close.innerText = 'X'
   close.className = 'modal__frame--close'
   let video = document.createElement('img')
-  video.src = e.target.src
+  video.src = e.target.dataset.large || e.target.src
   video.alt = e.target.alt
   video.className = 'modal__frame--picture'
 
