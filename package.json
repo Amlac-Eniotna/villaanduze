@@ -9,8 +9,8 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "prettier": "3.2.5",
-    "vite": "^6.4.1"
+    "prettier": "^3.9.4",
+    "vite": "^8.1.2"
   },
   "dependencies": {
     "sass": "^1.75.0"
